@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOLMY — Chalé nas Montanhas | Refúgio em Altitude</title>
+  <meta name="description" content="Holmy é um chalé de montanha de luxo minimalista a 1.850m de altitude. Arquitetura integrada à névoa, silêncio absoluto e experiência cinematográfica para dois.">
+  <link rel="icon" type="image/webp" href="logo.webp">
+
+  <!-- Google Fonts: Nunito (100% Rounded Font Everywhere) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Lenis CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.20/dist/lenis.min.css">
+
+  <!-- Custom Stylesheet with Cache Buster -->
+  <link rel="stylesheet" href="style.css?v=20260916-2">
+
+  <style>
+    /* Inline Fallback Guarantee for 100% Rounded Font */
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap');
+    *, *::before, *::after, html, body, h1, h2, h3, h4, h5, h6, p, span, a, button, input, textarea, label, div {
+      font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Ambient Film Grain Overlay -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- Persistent Minimalist Brand Anchor (Top Left) -->
+  <!-- Fades out and translates away when leaving the hero section -->
+  <header class="brand-anchor" id="brand-anchor">
+    <a href="#hero" class="brand-link" aria-label="Holmy - Início">
+      <img src="logo.webp" alt="Holmy Emblem" class="brand-emblem" id="brand-emblem">
+      <div class="brand-meta">
+        <span class="brand-name">HOLMY</span>
+        <span class="brand-sub">REFÚGIO EM ALTITUDE</span>
+      </div>
+    </a>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ================================================================= -->
+    <!-- HERO SECTION: VIDEO SCROLL-SCRUBBING & CINEMATIC CREDITS          -->
+    <!-- ================================================================= -->
+    <section class="hero-scroll-track" id="hero" aria-label="Apresentação Cinematográfica Holmy">
+      <div class="hero-sticky-stage" id="hero-sticky-stage">
+        
+        <!-- Video Wrapper for Scroll Scrubbing with Pure B&W Filter -->
+        <div class="video-canvas-wrapper" id="video-wrapper">
+          <video 
+            id="hero-video" 
+            src="video.webm" 
+            preload="auto" 
+            muted 
+            playsinline 
+            webkit-playsinline
+            aria-hidden="true"
+            style="filter: grayscale(100%) contrast(115%) brightness(92%); -webkit-filter: grayscale(100%) contrast(115%) brightness(92%); object-fit: cover; width: 100%; height: 100%; display: block;">
+          </video>
+          <!-- Dark Vignette for Cinematic Depth & Legibility -->
+          <div class="video-vignette"></div>
+        </div>
+
+        <!-- Cinematic Overlay Texts: 3 Synchronized Acts -->
+        <div class="cinematic-narrative">
+          
+          <!-- Act 1: Initial Reveal (0% to 30% scroll) -->
+          <div class="narrative-act act-1" id="act-1">
+            <span class="act-eyebrow">SERRA DA MANTIQUEIRA • BRASIL</span>
+            <h1 class="act-title">HOLMY</h1>
+            <p class="act-lead">Um santuário contemporâneo suspenso no limiar das nuvens.</p>
+          </div>
+
+          <!-- Act 2: Architecture & Silence (35% to 65% scroll) -->
+          <div class="narrative-act act-2" id="act-2">
+            <span class="act-eyebrow">ARQUITETURA & SOLIDÃO SERENA</span>
+            <h2 class="act-title">Esculpido na rocha,<br>na madeira e na bruma.</h2>
+            <p class="act-lead">Nenhum ruído além do vento cantando entre os pinhais e o estalar suave da lareira.</p>
+          </div>
+
+          <!-- Act 3: Disconnection & Invitation (70% to 95% scroll) -->
+          <div class="narrative-act act-3" id="act-3">
+            <span class="act-eyebrow">EXCLUSIVIDADE ABSOLUTA</span>
+            <h2 class="act-title">Onde o tempo<br>perde a pressa.</h2>
+            <p class="act-lead">Apenas um chalé no topo do vale. Uma imersão reservada para dois.</p>
+          </div>
+
+        </div>
+
+        <!-- Scroll Down Cue Indicator -->
+        <div class="scroll-cue" id="scroll-cue">
+          <span class="cue-label">DESLIZE PARA DESCOBRIR</span>
+          <div class="cue-mouse">
+            <div class="cue-wheel"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- ORGANIC WAVE DIVIDER: HERO -> MANIFESTO (WHITE TERRAIN CURVE)     -->
+    <!-- ================================================================= -->
+    <div class="wave-transition wave-hero-to-manifesto" aria-hidden="true">
+      <svg viewBox="0 0 1440 140" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,50 C320,140 620,-15 960,85 C1180,140 1340,30 1440,75 L1440,140 L0,140 Z" fill="#FFFFFF"></path>
+      </svg>
+    </div>
+
+
+    <!-- ================================================================= -->
+    <!-- SECTION 01: MANIFESTO & O CONCEITO                               -->
+    <!-- ================================================================= -->
+    <section class="section section-manifesto" id="manifesto">
+      <div class="content-container">
+        
+        <header class="section-badge-header reveal-item">
+          <span class="eyebrow-badge">01 / O MANIFESTO</span>
+          <span class="section-tagline">O SILÊNCIO DAS ALTURAS</span>
+        </header>
+
+        <div class="manifesto-headline reveal-item">
+          <h2 class="editorial-headline">
+            A montanha não é um cenário para ser observado. É um ritmo primitivo ao qual aprendemos a nos curvar.
+          </h2>
+        </div>
+
+        <div class="manifesto-columns">
+          <div class="manifesto-col reveal-item">
+            <p class="lead-paragraph">
+              Concebido no topo de uma escarpa granítica a quase dois mil metros de altitude, o <strong>Holmy</strong> nasceu da recusa ao excesso. Enquanto o mundo abaixo acelera em frequências frenéticas, aqui o horizonte se dissolve em camadas de névoa e luz zenital.
+            </p>
+          </div>
+          <div class="manifesto-col reveal-item">
+            <p class="body-paragraph">
+              Nossa arquitetura monolítica foi desenhada em madeira carbonizada e panos de vidro duplo, respeitando as linhas naturais da cordilheira. Nenhum televisor, nenhum ruído mecânico artificial — apenas a acústica límpida do fogo, o aroma a cedro e o espetáculo ininterrupto do céu.
+            </p>
+            <div class="manifesto-stats">
+              <div class="stat-unit">
+                <span class="stat-number">1.850<small>m</small></span>
+                <span class="stat-desc">Altitude acima do mar</span>
+              </div>
+              <div class="stat-unit">
+                <span class="stat-number">01</span>
+                <span class="stat-desc">Chalé exclusivo</span>
+              </div>
+              <div class="stat-unit">
+                <span class="stat-number">360<small>°</small></span>
+                <span class="stat-desc">Visão desimpedida</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Full-Width Exterior Architectural Masterpiece Image -->
+        <div class="editorial-image-frame double-bezel reveal-item">
+          <div class="inner-frame">
+            <img src="assets/exterior.jpg" alt="Fachada arquitetônica minimalista do Chalé Holmy debruçado sobre o abismo" class="ken-burns-img" loading="lazy">
+            <div class="frame-caption">
+              <span class="caption-title">01.01 — MONÓLITO NA NEBLINA</span>
+              <span class="caption-sub">Fachada em madeira Shou Sugi Ban e balanço sobre a escarpa rochosa.</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================================================================= -->
+    <!-- SECTION 02: ACOMODAÇÕES & DESIGN DE ESPAÇOS                       -->
+    <!-- ================================================================= -->
+    <section class="section section-spaces" id="espacos">
+      <div class="content-container">
+        
+        <header class="section-badge-header reveal-item">
+          <span class="eyebrow-badge">02 / A ARQUITETURA</span>
+          <span class="section-tagline">ESPAÇOS DE CONTEMPLAÇÃO</span>
+        </header>
+
+        <div class="section-intro reveal-item">
+          <h2 class="editorial-title">Espaços esculpidos para desacelerar o corpo e a mente.</h2>
+          <p class="section-desc">
+            Cada centímetro do chalé foi desenhado para eliminar distrações visuais e amplificar a conexão com a vastidão montanhosa.
+          </p>
+        </div>
+
+        <!-- Editorial Bento Grid (Asymmetrical Architecture Showcase) -->
+        <div class="editorial-bento-grid">
+          
+          <!-- Bento Item 1: Master Suite (7 Cols) -->
+          <article class="bento-card bento-7 double-bezel reveal-item">
+            <div class="inner-frame">
+              <div class="card-media">
+                <img src="assets/suite.jpg" alt="Suíte Panorâmica com cama king de linho e lareira suspensa" class="ken-burns-img" loading="lazy">
+              </div>
+              <div class="card-content">
+                <div class="card-header-flex">
+                  <span class="card-num">02.A</span>
+                  <span class="card-tag">SUÍTE PANORÂMICA</span>
+                </div>
+                <h3 class="card-title">Despertar no Mar de Nuvens</h3>
+                <p class="card-text">
+                  Vidros térmicos de quatro metros de vão proporcionam a sensação de flutuar sobre o vale. Cama king sob lençóis de linho belga lavado a pedra, piso aquecido radiante e lareira de aço carbono suspensa aos pés da cama.
+                </p>
+                <div class="card-specs">
+                  <span>Lençóis de linho 100% puro</span> • <span>Lareira suspensa a lenha</span> • <span>Piso térmico</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Bento Item 2: Hot Tub Deck (5 Cols) -->
+          <article class="bento-card bento-5 double-bezel reveal-item">
+            <div class="inner-frame">
+              <div class="card-media">
+                <img src="assets/ofuro.jpg" alt="Ofurô japonês em madeira escura no deck panorâmico" class="ken-burns-img" loading="lazy">
+              </div>
+              <div class="card-content">
+                <div class="card-header-flex">
+                  <span class="card-num">02.B</span>
+                  <span class="card-tag">DECK EM BALANÇO</span>
+                </div>
+                <h3 class="card-title">Ofurô Termal ao Ar Livre</h3>
+                <p class="card-text">
+                  Em madeira de cedro negro com água aquecida a 40°C, debruçado sobre a crista da montanha para banhos ao amanhecer ou sob o manto estelar.
+                </p>
+                <div class="card-specs">
+                  <span>Cedro maciço</span> • <span>Aquecimento a lenha & gás</span> • <span>Deck 80m²</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Bento Item 3: Suspended Fireplace Lounge (5 Cols) -->
+          <article class="bento-card bento-5 double-bezel reveal-item">
+            <div class="inner-frame">
+              <div class="card-media">
+                <img src="assets/lounge.jpg" alt="Lounge com lareira suspensa, banco de concreto e mesa de leitura" class="ken-burns-img" loading="lazy">
+              </div>
+              <div class="card-content">
+                <div class="card-header-flex">
+                  <span class="card-num">02.C</span>
+                  <span class="card-tag">LIVING & FOGO</span>
+                </div>
+                <h3 class="card-title">O Santuário da Lareira</h3>
+                <p class="card-text">
+                  Mobiliário autoral em concreto protendido, estofados em lã crua e seleção curada de livros de arquitetura, arte moderna e poesia de altitude.
+                </p>
+                <div class="card-specs">
+                  <span>Acervo bibliográfico</span> • <span>Cafeteira Hario V60 & Prensa</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Bento Item 4: Materiality Blueprint (7 Cols) -->
+          <article class="bento-card bento-7 double-bezel card-technical reveal-item">
+            <div class="inner-frame tech-frame">
+              <div class="tech-header">
+                <span class="card-num">02.D</span>
+                <span class="card-tag">MATERIALIDADE PURA</span>
+              </div>
+              <h3 class="tech-title">A verdade dos materiais em seu estado mais autêntico.</h3>
+              
+              <div class="tech-grid">
+                <div class="tech-item">
+                  <span class="tech-idx">01</span>
+                  <h4>Shou Sugi Ban</h4>
+                  <p>Cedro carbonizado pelo fogo para resistir às intempéries, neblinas e geadas sem uso de vernizes químicos.</p>
+                </div>
+                <div class="tech-item">
+                  <span class="tech-idx">02</span>
+                  <h4>Granito e Concreto Bruto</h4>
+                  <p>Pisos e bancadas talhadas em rocha local de alta inércia térmica para manter o calor reconfortante.</p>
+                </div>
+                <div class="tech-item">
+                  <span class="tech-idx">03</span>
+                  <h4>Vidro Insulado Duplo</h4>
+                  <p>Esquadrias de corte térmico com gás argônio que selam o vento frio e mantêm o interior aquecido.</p>
+                </div>
+                <div class="tech-item">
+                  <span class="tech-idx">04</span>
+                  <h4>Luz Zenital e Circadiana</h4>
+                  <p>Aberturas posicionadas rigorosamente para acompanhar a curva solar desde a alvorada até o crepúsculo.</p>
+                </div>
+              </div>
+
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================================================================= -->
+    <!-- SECTION 03: EXPERIÊNCIAS SENSORIAIS (RITMO DO DIA)                -->
+    <!-- ================================================================= -->
+    <section class="section section-experiences" id="experiencias">
+      <div class="content-container">
+        
+        <header class="section-badge-header reveal-item">
+          <span class="eyebrow-badge">03 / A JORNADA</span>
+          <span class="section-tagline">O RITMO DAS HORAS</span>
+        </header>
+
+        <div class="section-intro reveal-item">
+          <h2 class="editorial-title">Um dia orquestrado pela luz e pelo silêncio.</h2>
+          <p class="section-desc">
+            Sem relógios ou compromissos. A experiência no Holmy é conduzida pelas transformações naturais do ecossistema das alturas.
+          </p>
+        </div>
+
+        <!-- Time-based Itinerary Rows -->
+        <div class="itinerary-timeline">
+          
+          <div class="timeline-row reveal-item">
+            <div class="time-col">
+              <span class="time-stamp">06:30</span>
+              <span class="time-period">ALVORADA</span>
+            </div>
+            <div class="detail-col">
+              <h3 class="detail-title">Névoa Matinal & Café de Altitude</h3>
+              <p class="detail-desc">
+                Desperte enquanto os primeiros raios dourados varrem as montanhas. O concierge discreto disponibiliza grãos artesanais colhidos em fazendas vizinhas a 1.400m de altitude, prontos para moagem e infusão lenta.
+              </p>
+            </div>
+            <div class="meta-col">
+              <span class="meta-pill">Sensorial</span>
+              <span class="meta-note">Vista para o mar de nuvens</span>
+            </div>
+          </div>
+
+          <div class="timeline-row reveal-item">
+            <div class="time-col">
+              <span class="time-stamp">10:30</span>
+              <span class="time-period">MEIO-DIA</span>
+            </div>
+            <div class="detail-col">
+              <h3 class="detail-title">Trilha dos Pinheiros & Banho de Floresta</h3>
+              <p class="detail-desc">
+                Trilha privativa de 2,8km com acesso exclusivo dos hóspedes por entre araucárias centenárias, líquens raros e um mirante de pedra natural com eco absoluto.
+              </p>
+            </div>
+            <div class="meta-col">
+              <span class="meta-pill">Imersão</span>
+              <span class="meta-note">Reserva biológica privativa</span>
+            </div>
+          </div>
+
+          <div class="timeline-row reveal-item">
+            <div class="time-col">
+              <span class="time-stamp">17:45</span>
+              <span class="time-period">CREPÚSCULO</span>
+            </div>
+            <div class="detail-col">
+              <h3 class="detail-title">O Crepúsculo no Ofurô & Vinho Vulcânico</h3>
+              <p class="detail-desc">
+                Conforme a temperatura do ar cai para menos de 10°C, o vapor do ofurô a 40°C envolve o deck. Uma garrafa de vinho de colheita de inverno é servida enquanto o céu tinge-se de carvão e violeta.
+              </p>
+            </div>
+            <div class="meta-col">
+              <span class="meta-pill">Relaxamento</span>
+              <span class="meta-note">Banho sob temperatura controlada</span>
+            </div>
+          </div>
+
+          <div class="timeline-row reveal-item">
+            <div class="time-col">
+              <span class="time-stamp">22:00</span>
+              <span class="time-period">NOITE PROFUNDA</span>
+            </div>
+            <div class="detail-col">
+              <h3 class="detail-title">Cúpula Celeste & Fogo na Lareira</h3>
+              <p class="detail-desc">
+                A 1.850 metros de altitude e a quilômetros de qualquer centro urbano, a poluição luminosa é nula. A Via Láctea e as constelações do hemisfério sul surgem com nitidez diamantina diante de sua janela.
+              </p>
+            </div>
+            <div class="meta-col">
+              <span class="meta-pill">Astronomia</span>
+              <span class="meta-note">Céu Classe 1 na escala Bortle</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================================================================= -->
+    <!-- SECTION 04: ESPECIFICAÇÕES & LOCALIZAÇÃO                          -->
+    <!-- ================================================================= -->
+    <section class="section section-specs" id="localizacao">
+      <div class="content-container">
+        
+        <header class="section-badge-header reveal-item">
+          <span class="eyebrow-badge">04 / A TOPOGRAFIA</span>
+          <span class="section-tagline">ISOLAMENTO PRESERVADO</span>
+        </header>
+
+        <div class="specs-layout-split">
+          
+          <div class="specs-text-pane reveal-item">
+            <h2 class="editorial-title">Isolamento absoluto a poucas horas da metrópole.</h2>
+            <p class="body-paragraph">
+              Para preservar a exclusividade e a tranquilidade ecológica, o endereço exato com coordenadas de acesso e o código da guarita privativa são fornecidos exclusivamente 48 horas antes do check-in.
+            </p>
+
+            <div class="specs-table">
+              <div class="table-row">
+                <span class="row-label">Altitude Geodésica</span>
+                <span class="row-value">1.850 metros</span>
+              </div>
+              <div class="table-row">
+                <span class="row-label">Região</span>
+                <span class="row-value">Serra da Mantiqueira, Brasil</span>
+              </div>
+              <div class="table-row">
+                <span class="row-label">Acesso Final</span>
+                <span class="row-value">12 km de estrada de terra privativa</span>
+              </div>
+              <div class="table-row">
+                <span class="row-label">Capacidade</span>
+                <span class="row-value">Estritamente 02 hóspedes (Adults Only)</span>
+              </div>
+              <div class="table-row">
+                <span class="row-label">Área Construída</span>
+                <span class="row-value">120 m² internos + 80 m² de deck</span>
+              </div>
+              <div class="table-row">
+                <span class="row-label">Conexão Digital</span>
+                <span class="row-value">Starlink de alta velocidade (opção de desativação)</span>
+              </div>
+              <div class="table-row">
+                <span class="row-label">Energia</span>
+                <span class="row-value">100% Solar com banco de baterias de lítio</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Minimalist Vector Topographic Contour Graphic -->
+          <div class="specs-map-pane double-bezel reveal-item">
+            <div class="inner-frame map-frame">
+              <div class="map-vector-wrapper">
+                <svg viewBox="0 0 600 500" class="topography-svg" fill="none" stroke="currentColor" stroke-width="1.2">
+                  <!-- Contour Lines of Mountain -->
+                  <path d="M 50,450 C 150,380 220,420 350,390 C 480,360 550,420 580,450" opacity="0.2"/>
+                  <path d="M 60,390 C 140,320 250,360 380,320 C 460,290 530,350 560,380" opacity="0.3"/>
+                  <path d="M 80,330 C 160,270 270,300 400,260 C 470,230 520,290 540,320" opacity="0.4"/>
+                  <path d="M 110,270 C 190,210 290,230 410,200 C 480,180 500,240 520,260" opacity="0.5"/>
+                  <path d="M 150,210 C 220,150 310,170 420,140 C 470,120 480,180 500,200" opacity="0.6"/>
+                  <path d="M 200,150 C 260,100 330,120 430,90 C 460,80 470,130 480,140" opacity="0.8"/>
+                  <path d="M 260,95 C 310,65 370,80 425,65 C 445,60 450,90 455,95" opacity="1.0"/>
+                  <!-- Chalet Elevation Pin -->
+                  <circle cx="370" cy="80" r="6" fill="#000000"/>
+                  <circle cx="370" cy="80" r="16" stroke="#000000" stroke-width="1" stroke-dasharray="2 3"/>
+                  <!-- Technical Markings -->
+                  <text x="390" y="84" font-size="10" letter-spacing="2" fill="#000000">HOLMY [1.850M]</text>
+                  <text x="60" y="60" font-size="9" letter-spacing="1.5" fill="#000000" opacity="0.6">COORD: 22°44'28"S 45°35'12"W</text>
+                  <text x="60" y="80" font-size="9" letter-spacing="1.5" fill="#000000" opacity="0.6">CURVAS DE NÍVEL: 25M INTERVAL</text>
+                </svg>
+              </div>
+              <div class="map-footer-caption">
+                <span class="coord-badge">ÁREA DE PRESERVAÇÃO PRIVATIVA</span>
+                <span class="coord-desc">Acesso restrito e controlado por biometria e portão eletrônico.</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================================================================= -->
+    <!-- SECTION 05: SOLICITAÇÃO DE RESERVA & CONCIERGE                    -->
+    <!-- ================================================================= -->
+    <section class="section section-booking" id="reserva">
+      <div class="content-container">
+        
+        <div class="booking-wrapper double-bezel reveal-item">
+          <div class="inner-frame booking-frame">
+            
+            <div class="booking-grid">
+              
+              <!-- Left: Editorial Pitch & Hospitality Guarantees -->
+              <div class="booking-pitch">
+                <header class="section-badge-header">
+                  <span class="eyebrow-badge">05 / A RESERVA</span>
+                  <span class="section-tagline">DISPONIBILIDADE LIMITADA</span>
+                </header>
+
+                <h2 class="booking-title">Reserve seus dias de silêncio absoluto.</h2>
+                <p class="body-paragraph">
+                  Por acolher apenas uma estadia por vez, as datas para finais de semana costumam esgotar-se com antecedência. Selecione seu período desejado para verificar a viabilidade com nosso concierge privativo.
+                </p>
+
+                <div class="booking-perks">
+                  <div class="perk-item">
+                    <span class="perk-bullet">—</span>
+                    <div>
+                      <strong>Estadia mínima de 02 noites</strong>
+                      <p>Para garantir que o corpo de fato se sintonize ao ritmo da montanha.</p>
+                    </div>
+                  </div>
+                  <div class="perk-item">
+                    <span class="perk-bullet">—</span>
+                    <div>
+                      <strong>Serviço de Geladeira Abastecida</strong>
+                      <p>Curadoria de queijos artesanais da serra, pães de fermentação natural e vinhos selecionados.</p>
+                    </div>
+                  </div>
+                  <div class="perk-item">
+                    <span class="perk-bullet">—</span>
+                    <div>
+                      <strong>Check-in Sem Chave</strong>
+                      <p>Total privacidade desde a sua chegada até a despedida.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="concierge-direct">
+                  <span class="direct-label">Atendimento Concierge:</span>
+                  <a href="https://wa.me/5511999999999" class="direct-link" target="_blank" rel="noopener">
+                    WhatsApp Privativo <span>↗</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Right: Minimalist Reservation Request Form -->
+              <div class="booking-form-pane">
+                <form id="booking-form" class="minimal-form" novalidate>
+                  
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="checkin" class="form-label">CHECK-IN PREVISTO</label>
+                      <input type="date" id="checkin" name="checkin" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="checkout" class="form-label">CHECK-OUT PREVISTO</label>
+                      <input type="date" id="checkout" name="checkout" class="form-input" required>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="name" class="form-label">NOME COMPLETO</label>
+                    <input type="text" id="name" name="name" class="form-input" placeholder="Seu nome" required>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="email" class="form-label">E-MAIL</label>
+                      <input type="email" id="email" name="email" class="form-input" placeholder="seu@email.com" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="phone" class="form-label">WHATSAPP / TELEFONE</label>
+                      <input type="tel" id="phone" name="phone" class="form-input" placeholder="(11) 99999-9999" required>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="notes" class="form-label">OBSERVAÇÕES & PREFERÊNCIAS (OPCIONAL)</label>
+                    <textarea id="notes" name="notes" class="form-textarea" rows="3" placeholder="Celebração especial, restrições alimentares ou solicitações para o concierge..."></textarea>
+                  </div>
+
+                  <!-- Button with Island / Button-in-Button Architecture -->
+                  <div class="form-action">
+                    <button type="submit" class="island-button" id="submit-booking-btn">
+                      <span class="btn-text">SOLICITAR CONSULTA DE DISPONIBILIDADE</span>
+                      <span class="btn-icon-wrapper" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1.5 12.5L12.5 1.5M12.5 1.5H3.5M12.5 1.5V10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </span>
+                    </button>
+                  </div>
+
+                  <!-- Form Feedback Message -->
+                  <div class="form-status-msg" id="form-status-msg" aria-live="polite"></div>
+
+                </form>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================================================================= -->
+  <!-- ORGANIC WAVE DIVIDER: BACKGROUND -> FOOTER (DARK TERRAIN CURVE)   -->
+  <!-- ================================================================= -->
+  <div class="wave-transition wave-content-to-footer" aria-hidden="true">
+    <svg viewBox="0 0 1440 140" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,80 C360,10 680,130 1020,40 C1240,-10 1360,70 1440,50 L1440,140 L0,140 Z" fill="#0a0a0a"></path>
+    </svg>
+  </div>
+
+  <!-- ================================================================= -->
+  <!-- EDITORIAL FOOTER                                                  -->
+  <!-- ================================================================= -->
+  <footer class="editorial-footer" id="footer">
+    <div class="content-container">
+      
+      <div class="footer-top-row">
+        <div class="footer-brand-block">
+          <img src="logo.webp" alt="Holmy" class="footer-logo">
+          <span class="footer-big-title">HOLMY</span>
+          <p class="footer-mantra">Arquitetura de contemplação. O santuário dos pinhais.</p>
+        </div>
+
+        <div class="footer-nav-columns">
+          <div class="footer-col">
+            <span class="col-title">ÍNDICE</span>
+            <a href="#hero" class="footer-link">00 — O Início</a>
+            <a href="#manifesto" class="footer-link">01 — Manifesto</a>
+            <a href="#espacos" class="footer-link">02 — Acomodações</a>
+            <a href="#experiencias" class="footer-link">03 — Experiências</a>
+            <a href="#localizacao" class="footer-link">04 — Topografia</a>
+            <a href="#reserva" class="footer-link">05 — Reserva</a>
+          </div>
+
+          <div class="footer-col">
+            <span class="col-title">COORDENADAS</span>
+            <span class="footer-meta-item">Serra da Mantiqueira</span>
+            <span class="footer-meta-item">Latitude: 22°44'28"S</span>
+            <span class="footer-meta-item">Longitude: 45°35'12"W</span>
+            <span class="footer-meta-item">Altitude: 1.850m</span>
+          </div>
+
+          <div class="footer-col">
+            <span class="col-title">CONCIERGE</span>
+            <a href="mailto:concierge@holmy.com.br" class="footer-link">concierge@holmy.com.br</a>
+            <span class="footer-meta-item">Atendimento: 08:00 às 20:00</span>
+            <span class="footer-meta-item">Exclusivo para hóspedes</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <span class="copyright">© 2026 HOLMY CHALÉ NAS MONTANHAS. TODOS OS DIREITOS RESERVADOS.</span>
+        <span class="environmental-note">CONSTRUÇÃO SUSTENTÁVEL • PRESERVAÇÃO DE 48 HECTARES DE MATA NATIVA</span>
+        <a href="#hero" class="back-to-top-btn" id="back-to-top" aria-label="Voltar ao início">
+          TOPO ↑
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts: Lenis + GSAP & ScrollTrigger -->
+  <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  
+  <!-- Main Application Logic with Cache Buster -->
+  <script src="app.js?v=20260916-2"></script>
+</body>
+</html>
